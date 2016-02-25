@@ -1,19 +1,28 @@
 
 import UIKit
 
+//Zestaw 1 - listy, słowniki, tuple, wartości typu optional
 
-var encrypted = [UInt8]()
+func mergePairs(listOfElements: [AnyObject]) -> [(AnyObject, AnyObject)]{
+/*
+    Dla listy elementów stwórz listę zawierającą listę tupli kolejnych par elementów.
+    Dla list o nieparzystej długości, w ostatniej tupli ostatni element powtórz dwukrotnie.
+        np. ["a",1,4] -> [("a",1),(4,4)]
+*/
+}
 
-func enc(ans:String) -> UInt8{
-    let txt = [UInt8](ans.utf8)
-    return txt.map({$0 ^ 50}).reduce(0, combine: {$0 + $1})
+func dropTheLastElement(listOfElements: [AnyObject]) -> [[AnyObject]]{
+/*
+    Dla listy elementów stwórz listę zawierającą zadaną listę z odcinaną coraz większą ilością elementów.
+    np. [1,2,3,4,5] -> [[1,2,3,4,5],[1,2,3,4], [1,2,3], [1,2],[1]]
+    
+*/
 }
 
 
-
-func createDictWithCount(listOfNames: [String]){
+func createDictWithCount(listOfNames: [String]) -> [String: Int]{
 /*
-    Dla listy imion stwórz słownik który dla każdego imiona przechowuje liczbę jego wystąpień
+    Dla listy stringów stwórz słownik który dla każdego z nich przechowuje liczbę jego wystąpień
 */
 }
 
@@ -26,7 +35,6 @@ func inverseDict(dictToInv: [String: String]) -> (isBijection: Bool, ans: [Strin
     np. ["Bob" : "Smith", "Jan" : "Kowalski"] -> (true, ["Smith": "Bob", "Kowalski" : "Jan"])
 */
     
-    return(false, [String:String]())
 }
 
 func fibonacci(listOfIndexes: [Int?]) -> String {
@@ -46,21 +54,8 @@ func fibonacci(listOfIndexes: [Int?]) -> String {
     * tablicę stringów można przekształcić do pojedynczego stringa za pomocą metody joinWithSeparator()
     
 */
-    
-    return ""
 }
 
-
-func testTask1(){
-    var ans = "\(enc(fibonacci([3,4,5,nil,6,nil,14])))"
-    print("\(ans == "153")")
-    ans = "\(enc(fibonacci([nil,nil])))"
-    print("\(ans == "0")")
-    ans = "\(enc(fibonacci([2,5,10])))"
-    print("\(ans == "86")")
-}
-
-testTask1()
 
 
 
