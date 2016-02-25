@@ -1,2 +1,2 @@
 # internship
-This is a depository for educational purposes.
+This is a repository for educational purposes.
